@@ -51,16 +51,12 @@
 
 document.addEventListener('deviceready', function(){
 	realApp.start();
-}, false);
-
-function onDeviceReady(){
-    document.addEventListener("backbutton", function(e){
-       if($.mobile.activePage.is('#homepage')){
+	document.addEventListener("backbutton", function(e){
+       	if($.mobile.activePage.is('#homepage')){
            e.preventDefault();
            navigator.app.exitApp();
-       }
-       else {
+       	}
+       	else {
            navigator.app.backHistory()
-       }
-    }, false);
-}
+       	}
+}, false);
