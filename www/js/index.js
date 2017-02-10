@@ -51,12 +51,4 @@
 
 document.addEventListener('deviceready', function(){
 	realApp.start();
-	document.addEventListener("backbutton", function(e){
-       	if($.mobile.activePage.is('#homepage')){
-           e.preventDefault();
-           navigator.app.exitApp();
-       	}
-       	else {
-           navigator.app.backHistory()
-       	}
 }, false);
