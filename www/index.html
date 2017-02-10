@@ -7,35 +7,57 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 
         <link rel="stylesheet" type="text/css"  href="css/phonon/phonon.css" />
-        <title>TestApp support</title>
+        <title>BackOffice support</title>
+ 	<STYLE TYPE="text/css">
+		.buttons{
+			width: 100%;
+		}
+		.buttons a {
+		    background: #666;
+			cursor: pointer;
+			color: #fff;
+			font-size: 14px;
+			margin-top: 10px;
+			border: none;
+			outline: none;
+			text-decoration: none;
+			padding: 15px 30px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			font-weight: bold;
+			margin-right: 30px;
+			width: 95%;
+			display: inline-block;
+		}
+		.buttons a:hover, a:focus {
+			background: #3dcd58;
+		}
+      	</STYLE>
     </head>
-    <body>
-        
-        <!-- Panel tags go here -->
-
-        <!-- Side Panel tags go here -->
-
-        <!-- Notification tags go here -->
-
-        <!-- Dialog tags go here -->
-
-
-        <!-- the home page is the default one. This page does not require to call its content because we define on its tag.-->
+    <BODY bgcolor="white"style="text-align: center;">
+  
         <home data-page="true">
             
             <header class="header-bar">
                 <div class="center">
-                    <h1 class="title">TestApp SUPPORT</h1>
+                    <h1 class="title">BackOffice support</h1>
                 </div>
             </header>
-            <div class="content">
-
-                <ul class="list">
+<!-- 		
+            <div class="content">              
+		<ul class="list">
 		   <li><a class="padded-list" href="https://demo.ividio.net/flex.html?roomdirect.html&key=i66q2urdgy">Soporte 01</a></li>
 		   <li><a class="padded-list" href="https://demo.ividio.net/flex.html?roomdirect.html&key=Gfoa5c2fK4">Soporte 02</a></li>
-                </ul>
-
+                </ul>		
             </div>
+-->
+	    <div class="buttons">
+		<a href="https://demo.ividio.net/flex.html?roomdirect.html&key=i66q2urdgy" tabindex="1">Soporte 01</a>
+	    </div>	
+	    <div class="buttons">
+		<a href="https://demo.ividio.net/flex.html?roomdirect.html&key=Gfoa5c2fK4" tabindex="2">Soporte 02</a>	 
+	    </div>
         </home>
 
         <!-- for the second page, Phonon will load its content. --> 
